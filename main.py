@@ -8,7 +8,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    print('someone clicked the link lul')
     # woah ip pulling
     ip_address = request.environ['HTTP_X_FORWARDED_FOR']
     img = Image.open('spunchbob.jpeg').convert('RGB')
